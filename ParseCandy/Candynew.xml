@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:candys xmlns:tns="http://www.epam.com/candy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epam.com/candy candy.xsd ">
+  <tns:candy Type="toffee">
+    <tns:name>TOFFEE</tns:name>
+    <tns:energy>200kkal</tns:energy>
+    <tns:production>"ROSHEN"</tns:production>
+    <tns:value>
+      <tns:proteins>1</tns:proteins>
+      <tns:fats>1</tns:fats>
+      <tns:carbahydrates>1</tns:carbahydrates>
+    </tns:value>
+    <tns:ingredients typeOfchocolate="blackChocolate">
+      <tns:fructose>1</tns:fructose>
+      <tns:sugar>1</tns:sugar>
+      <tns:vanilin>1</tns:vanilin>
+      <tns:water>1</tns:water>
+    </tns:ingredients>
+  </tns:candy>
+  <tns:candy Type="chocolate">
+    <tns:name>KOROVKA</tns:name>
+    <tns:energy>230kkal</tns:energy>
+    <tns:production>"IVCON"</tns:production>
+    <tns:value>
+      <tns:proteins>1</tns:proteins>
+      <tns:fats>1</tns:fats>
+      <tns:carbahydrates>1</tns:carbahydrates>
+    </tns:value>
+    <tns:ingredients typeOfchocolate="blackChocolate">
+      <tns:fructose>1</tns:fructose>
+      <tns:sugar>1</tns:sugar>
+      <tns:vanilin>1</tns:vanilin>
+      <tns:water>1</tns:water>
+    </tns:ingredients>
+  </tns:candy>
+  <tns:candy Type="caramel">
+    <tns:name>tns:name</tns:name>
+    <tns:energy>1</tns:energy>
+    <tns:production>"KOMYNARKA"</tns:production>
+    <tns:value>
+      <tns:proteins>1</tns:proteins>
+      <tns:fats>1</tns:fats>
+      <tns:carbahydrates>1</tns:carbahydrates>
+    </tns:value>
+    <tns:ingredients typeOfchocolate="blackChocolate">
+      <tns:fructose>1</tns:fructose>
+      <tns:sugar>1</tns:sugar>
+      <tns:vanilin>1</tns:vanilin>
+      <tns:water>1</tns:water>
+    </tns:ingredients>
+  </tns:candy>
+  <tns:candy Type="caramel">
+    <tns:name>CHUPS</tns:name>
+    <tns:energy>1</tns:energy>
+    <tns:production>"CHUPIK"</tns:production>
+    <tns:value>
+      <tns:proteins>1</tns:proteins>
+      <tns:fats>1</tns:fats>
+      <tns:carbahydrates>1</tns:carbahydrates>
+    </tns:value>
+    <tns:ingredients typeOfchocolate="blackChocolate">
+      <tns:fructose>1</tns:fructose>
+      <tns:sugar>1</tns:sugar>
+      <tns:vanilin>1</tns:vanilin>
+      <tns:water>1</tns:water>
+    </tns:ingredients>
+  </tns:candy>
+  <tns:candy Type="chocolate with stuffed">
+    <tns:name>FTOPPY</tns:name>
+    <tns:energy>1</tns:energy>
+    <tns:production>"FERRERO"</tns:production>
+    <tns:value>
+      <tns:proteins>1</tns:proteins>
+      <tns:fats>1</tns:fats>
+      <tns:carbahydrates>1</tns:carbahydrates>
+    </tns:value>
+    <tns:ingredients typeOfchocolate="blackChocolate">
+      <tns:fructose>1</tns:fructose>
+      <tns:sugar>1</tns:sugar>
+      <tns:vanilin>1</tns:vanilin>
+      <tns:water>1</tns:water>
+    </tns:ingredients>
+  </tns:candy>
+</tns:candys>
