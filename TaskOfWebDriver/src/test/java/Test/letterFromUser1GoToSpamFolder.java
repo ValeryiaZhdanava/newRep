@@ -18,7 +18,7 @@ public class letterFromUser1GoToSpamFolder {
 	@Test
 	public void openAccountGmail() {
 		steps.login("valery6693@gmail.com", "11kesha2011");
-		steps.sendMessage();
+		steps.sendMessage("kygkygkyy");//"Valeryrtg453"
 	}
 
 	@AfterTest

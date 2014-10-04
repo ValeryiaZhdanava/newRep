@@ -26,9 +26,9 @@ public class Steps {
 		loginPage.login(email, password);
 	}
 
-	public void sendMessage() {
+	public void sendMessage(String recipient) { //(String recipient
 		PageWithLetters page = new PageWithLetters(driver);
-		page.sendMessage();
+		page.sendMessage(recipient);
 
 	}
 }

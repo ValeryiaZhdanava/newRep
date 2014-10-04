@@ -14,6 +14,9 @@ public class PageWithLetters extends AbstractClass {
 	@FindBy(css = "div.T-I.J-J5-Ji.T-I-KE.L3")
 	private WebElement writeMessage;
 
+	@FindBy(id = ":9r")
+	private WebElement FieldForRecipient;
+
 	public PageWithLetters(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(this.driver, this);
@@ -25,8 +28,10 @@ public class PageWithLetters extends AbstractClass {
 		driver.navigate().to(BASE_URL);
 	}
 
-	public void sendMessage() {
+	public void sendMessage(String recipient) {// String recipient
 		writeMessage.click();
+		FieldForRecipient.sendKeys(recipient);
+
 		logger.info("Login performed");
 	}
 
