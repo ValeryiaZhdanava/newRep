@@ -6,7 +6,7 @@
       <class name="Test.letterFromUser1GoToSpamFolder">
         <methods>
           <include name="beforeTest"/>
-          <include name="openAccountGmail"/>
+          <include name="FirstUserSendMessageToSecondUser"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- Test.letterFromUser1GoToSpamFolder -->

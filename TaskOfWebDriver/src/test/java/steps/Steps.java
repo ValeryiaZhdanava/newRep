@@ -2,7 +2,7 @@ package steps;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
+import org.apache.log4j.Logger; 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -15,8 +15,8 @@ public class Steps {
 
 	public void initBrowser() {
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		logger.info("Browser started");
 	}
 
@@ -26,9 +26,14 @@ public class Steps {
 		loginPage.login(email, password);
 	}
 
-	public void sendMessage(String recipient) { //(String recipient
+	public void sendMessage(String recipient, String subject, String bodyMes) { // (String
+																				// recipient
 		PageWithLetters page = new PageWithLetters(driver);
-		page.sendMessage(recipient);
+		page.sendMessage(recipient, subject, bodyMes);
 
+	}
+
+	public void closeDriver() {
+		driver.quit();
 	}
 }

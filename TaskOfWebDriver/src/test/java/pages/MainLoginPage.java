@@ -17,6 +17,9 @@ public class MainLoginPage extends AbstractClass {
 	@FindBy(id = "Passwd")
 	private WebElement editForPassword;
 
+	// @FindBy(xpath = "//input[@type='checkbox'][@value='yes']")
+	// private WebElement Checkbox;
+
 	@FindBy(id = "signIn")
 	private WebElement buttonSubmit;
 
@@ -27,12 +30,13 @@ public class MainLoginPage extends AbstractClass {
 
 	public void openPage() {
 		driver.navigate().to(BASE_URL);
-		// logger.info("Login page opened");
+		logger.info("Login page opened");
 	}
 
 	public void login(String email, String password) {
 		editForEmail.sendKeys(email);
 		editForPassword.sendKeys(password);
+		// Checkbox.click();
 		buttonSubmit.submit();
 		logger.info("Login performed");
 	}
