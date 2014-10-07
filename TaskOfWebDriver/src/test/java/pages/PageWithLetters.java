@@ -51,15 +51,27 @@ public class PageWithLetters extends AbstractClass {
     public void sendMessage(String recipient, String subject, String bodyMes) {// String
 									       // recipient
 	ClickWriteMessage.click();
-
 	FieldForRecipient.sendKeys(recipient);
 	WriteSubject.sendKeys(subject);
 	WriteBodyMessage.sendKeys(bodyMes);
 	ClickSendMessage.click();
+	try {
+		Thread.sleep(9000); // wait page to load
+	} catch (InterruptedException e)
+
+	{
+		e.printStackTrace();
+
+	}
 	//ClickAccount.click();
 	//ClickExit.click();
 	
 	logger.info("Login performed");
+    }
+    
+    public void toSeeLetterAndSendToSpam()
+    {
+    	
     }
 
 }
