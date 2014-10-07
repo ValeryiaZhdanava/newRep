@@ -16,9 +16,12 @@ public class letterFromUser1GoToSpamFolder {
 	}
 
 	@Test
-	public void openAccountGmail() {
+	public void FirstUserSendMessageToSecondUser() {
 		steps.login("valery6693@gmail.com", "11kesha2011");
-		steps.sendMessage("kygkygkyy");//"Valeryrtg453"
+		steps.sendMessage("valery66934@gmail.com", "SayHello",
+				"HEllo my Dear Friend!!!");// (пароль=dslr0101 )
+		steps.closeDriver();
+		// steps.login("valery66934@gmail.com", "dslr0101");
 	}
 
 	@AfterTest
