@@ -6,19 +6,19 @@ public enum Users {
 			"dslr0101");
 	// USER3()
 	private final String login;
-	private final String parol;
+	private final String password;
 
-	Users(String login, String parol) {
+	Users(String login, String password) {
 		this.login = login;
-		this.parol = parol;
+		this.password = password;
 	}
 
 	public String getLogin() {
 		return login;
 	}
 
-	public String getParol() {
-		return parol;
+	public String getPassword() {
+		return password;
 	}
 
 }

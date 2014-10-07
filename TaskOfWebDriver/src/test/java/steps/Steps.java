@@ -2,12 +2,16 @@ package steps;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger; 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import Object.Email;
+import Object.Users;
+
+import pages.EmailPage;
 import pages.MainLoginPage;
-import pages.PageWithLetters;
+import utils.Utils;
 
 public class Steps {
 	private WebDriver driver;
@@ -20,16 +24,21 @@ public class Steps {
 		logger.info("Browser started");
 	}
 
-	public void login(String email, String password) {
-		MainLoginPage loginPage = new MainLoginPage(driver);
-		loginPage.openPage();
-		loginPage.login(email, password);
+	public void login(Users USER1) {
+		 MainLoginPage loginPage = new MainLoginPage(driver);
+		 loginPage.openPage();
+		 loginPage.login(USER1);
+		
 	}
 
-	public void sendMessage(String recipient, String subject, String bodyMes) { // (String
-																				// recipient
-		PageWithLetters page = new PageWithLetters(driver);
-		page.sendMessage(recipient, subject, bodyMes);
+	public void sendMessage(Email adress, Users USER1, Email subject, Utils util, Email bodyMessage) {
+
+		MainLoginPage page = new MainLoginPage(driver);
+		EmailPage epage = new EmailPage(driver);
+		page.newMessage();
+		epage.fillAdress(adress, USER1);
+		epage.fillSubject(subject, util);
+		epage.fillBodyMessage(bodyMessage, util);
 
 	}
 
