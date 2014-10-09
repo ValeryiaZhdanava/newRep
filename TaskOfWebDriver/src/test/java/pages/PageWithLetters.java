@@ -43,7 +43,6 @@ public class PageWithLetters extends AbstractClass {
     public void sendMessage(String recipient, String subject, String bodyMes) {
 									       
 	ClickWriteMessage.click();
-
 	FieldForRecipient.sendKeys(recipient);
 	WriteSubject.sendKeys(subject);
 	WriteBodyMessage.sendKeys(bodyMes);
