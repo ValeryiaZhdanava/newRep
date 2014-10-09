@@ -4,11 +4,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Object.Email;
-import Object.Users;
-
 import steps.Steps;
-import utils.Utils;
 
 public class letterFromUser1GoToSpamFolder {
 	private Steps steps;
@@ -20,17 +16,14 @@ public class letterFromUser1GoToSpamFolder {
 	}
 
 	@Test
-	public void FirstUserSendMessageToSecondUser(Email adress, Users user,
-			Email subject, Utils util, Email bodyMessage) {
-
-		steps.sendMessage(adress, user, subject, util, bodyMessage);
-		steps.closeDriver();
-		steps.initBrowser();
-
-	}
+	public void FirstUserSendMessageToSecondUser() {
+		steps.login("valery6693@gmail.com", "11kesha2011");
+		steps.sendMessage("valery66934@gmail.com","SayHello", "HEllo my Dear Friend!!!");//(пароль=dslr0101 )
+				
+	}	
 
 	@AfterTest
 	public void afterTest() {
-		// steps.closeDriver();
+
 	}
 }
