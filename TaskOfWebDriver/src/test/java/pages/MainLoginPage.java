@@ -1,18 +1,20 @@
 package pages;
 
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainLoginPage extends AbstractClass {
 
 	private final Logger logger = Logger.getLogger(MainLoginPage.class);
 	// private final String BASE_URL = "https://www.gmail.com/";
-	private final String BASE_URL = "https://mail.google.com/mail";
+	private final String BASE_URL = "https://mail.google.com/mail/";
+	WebDriverWait wait = new WebDriverWait(driver, 150);
 
 	@FindBy(id = "Email")
 	private WebElement inputLogin;
@@ -20,14 +22,14 @@ public class MainLoginPage extends AbstractClass {
 	@FindBy(id = "Passwd")
 	private WebElement inputPassword;
 
-	
 	@FindBy(id = "signIn")
 	private WebElement buttonSubmit;
-	
+
 	@FindBy(css = "div.T-I.J-J5-Ji.T-I-KE.L3")
 	private WebElement clickWriteMessage;
-	
-	@FindBy(css = "textarea.vO") //textarea[@name='to']
+
+	@FindBy(css = "textarea.vO")
+	// textarea[@name='to']
 	private WebElement inputAdress;
 
 	@FindBy(xpath = "//input[@name='subjectbox']")
@@ -36,14 +38,17 @@ public class MainLoginPage extends AbstractClass {
 	@FindBy(xpath = "//div[@class='Am Al editable']/iframe")
 	private WebElement writeBodyMessage;
 
-	@FindBy(css = "div.T-I.J-J5-Ji.aoO.T-I-atl.L3")
+	@FindBy(xpath = "//div[@class='T-I J-J5-Ji aoO T-I-atl L3']")
 	private WebElement clickSendMessage;
-	
-	@FindBy (xpath = "//div[@class='T-Jo-auh']")
+
+	@FindBy(xpath = "//div[@class='T-Jo-auh']")
 	private WebElement chooseLetter;
-	
-	@FindBy (xpath = "//div[@class='asl T-I-J3 J-J5-Ji']")
+
+	@FindBy(xpath = "//div[@class='asl T-I-J3 J-J5-Ji']")
 	private WebElement inputToSpam;
+
+	@FindBy(xpath = "//div[@class='ae4.aDM']")
+	private WebElement theFirstLetter;
 
 	public MainLoginPage(WebDriver driver) {
 		super(driver);
@@ -62,24 +67,24 @@ public class MainLoginPage extends AbstractClass {
 		logger.info("Login performed");
 	}
 
-	public void newMessage() throws InterruptedException {
+	public void newMessage() {
+	
 		clickWriteMessage.click();
 		inputAdress.sendKeys("valery66934@gmail.com");
-		Thread.sleep(3000);
 		writeSubject.sendKeys("Hello");
 		writeBodyMessage.sendKeys("Heelogit!!!!");
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		clickSendMessage.click();	
-		
+		clickSendMessage.click();
+
 		logger.info("Login performed");
 	}
-	
-	public void setSpam(){
+
+	public void setSpam() {
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By
+				.xpath("//div[@class='Cp']")));
 		chooseLetter.click();
 		inputToSpam.click();
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-		
+
 	}
 
 }

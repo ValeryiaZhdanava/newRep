@@ -15,8 +15,8 @@ public class Steps {
 
 	public void initBrowser() {
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		logger.info("Browser started");
 	}
 
@@ -24,6 +24,7 @@ public class Steps {
 		MainLoginPage loginPage = new MainLoginPage(driver);
 		loginPage.openPage();
 		loginPage.login(login, password);
+		logger.info("Login performed");
 
 	}
 
@@ -41,7 +42,7 @@ public class Steps {
 	public void ToSeeSpam() {
 		SpamPage spage = new SpamPage(driver);
 		spage.ToSeeSpam();
-		spage.openPage();
+		// spage.openPage();
 	}
 
 	public void closeDriver() {

@@ -16,7 +16,7 @@ public class LetterGoToSpam {
 	}
 
 	@Test
-	public void IsLetteFromTheFirstUserGoToSpam() throws InterruptedException {
+	public void IsLetteFromTheFirstUserGoToSpam() throws InterruptedException  {
 
 		steps.login("Valery6693@gmail.com", "11kesha2011");
 		steps.sendMessage();
@@ -27,8 +27,8 @@ public class LetterGoToSpam {
 		steps.closeDriver();
 		steps.initBrowser();
 		steps.login("Valery6693@gmail.com", "11kesha2011");
+		
 		steps.sendMessage();
-		//Thread.sleep(1000);
 		steps.closeDriver();
 		steps.initBrowser();
 		steps.login("Valery66934@gmail.com", "dslr0101");
@@ -38,6 +38,6 @@ public class LetterGoToSpam {
 
 	@AfterTest
 	public void afterTest() {
-		// steps.closeDriver();
+	//steps.closeDriver();
 	}
 }
