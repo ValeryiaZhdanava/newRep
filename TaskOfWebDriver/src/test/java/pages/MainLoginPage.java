@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.Utils;
+
 public class MainLoginPage extends AbstractClass {
 
 	private final Logger logger = Logger.getLogger(MainLoginPage.class);
@@ -71,7 +73,7 @@ public class MainLoginPage extends AbstractClass {
 	
 		clickWriteMessage.click();
 		inputAdress.sendKeys("valery66934@gmail.com");
-		writeSubject.sendKeys("Hello");
+		writeSubject.sendKeys(Utils.getRandomString(6));
 		writeBodyMessage.sendKeys("Heelogit!!!!");
 		clickSendMessage.click();
 
