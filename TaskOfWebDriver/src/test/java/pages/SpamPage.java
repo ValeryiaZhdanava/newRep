@@ -1,35 +1,50 @@
 package pages;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SpamPage extends AbstractClass {
-	private final Logger logger = Logger.getLogger(MainLoginPage.class);
+	private final Logger logger = Logger.getLogger(SpamPage.class);
 	private final String SPAM_URL = "https://mail.google.com/mail/u/1/#spam";
-	WebDriverWait wait = new WebDriverWait(driver, 100);
 
-	// @FindBy(xpath = "//div[@class='TN.GLujEb']")
-	// private WebElement inputSpam;
+	int k = 0;
 
 	@FindBy(id = "gbqfq")
 	private WebElement inputText;
-	
-	@FindBy(xpath = "//span[@class='gbqfi gb_Fa']") //gbqfi gb_Fa
-	private WebElement inputSearch;  //gbqfb
+
+	@FindBy(xpath = "//span[@class='gbqfi gb_Fa']")
+	private WebElement inputSearch;
+
+	@FindBy(xpath = "//div[@class='zA zE']")
+	private List<WebElement> allLetters;
 
 	public void ToSeeSpam() {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By
-//				.xpath("//div[@class='Cp']"))); 
-												
 		inputText.click();
 		inputText.sendKeys("in:spam");
 		inputSearch.click();
+
+	}
+
+	public boolean CheckNumberOfLetters() {
+
+		for (int i = 0; i < allLetters.size(); i++) {
+			String email = allLetters.get(i).getAttribute("email");
+			if (email.equals("valery6693@gmail.com")) {
+				k++;
+			}
+			if (k == 2) {
+				return true;
+				// logger.info("The test is successful");
+			}
+
+		}
+		return false;
+		// logger.info("The test is failed");
 
 	}
 

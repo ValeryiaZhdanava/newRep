@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import pages.EmailPage;
 import pages.MainLoginPage;
 import pages.SpamPage;
 
@@ -30,7 +31,9 @@ public class Steps {
 
 	public void sendMessage() throws InterruptedException {
 		MainLoginPage page = new MainLoginPage(driver);
-		page.newMessage();
+		EmailPage epage = new EmailPage(driver);
+		page.clickNewMessage();
+		epage.newMessage();
 
 	}
 
@@ -43,6 +46,12 @@ public class Steps {
 		SpamPage spage = new SpamPage(driver);
 		spage.ToSeeSpam();
 		// spage.openPage();
+	}
+
+	public void CheckNumberOfLetters() {
+		 SpamPage spage = new SpamPage(driver);
+		 spage.CheckNumberOfLetters();
+
 	}
 
 	public void closeDriver() {

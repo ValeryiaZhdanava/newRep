@@ -16,28 +16,52 @@ public class LetterGoToSpam {
 	}
 
 	@Test
-	public void IsLetteFromTheFirstUserGoToSpam() throws InterruptedException  {
+	public void IsLetteFromTheFirstUserGoToSpam() throws InterruptedException {
+
+		// steps.login("Valery6693@gmail.com", "11kesha2011");
+		// steps.sendMessage();
+		// steps.closeDriver();
+		// steps.initBrowser();
+		// steps.login("Valery66934@gmail.com", "dslr0101");
+		// steps.setSpam();
+		// steps.closeDriver();
+		// steps.initBrowser();
+		// steps.login("Valery6693@gmail.com", "11kesha2011");
+		//
+		// steps.sendMessage();
+		// steps.closeDriver();
+		// steps.initBrowser();
+		// steps.login("Valery66934@gmail.com", "dslr0101");
+		// steps.ToSeeSpam();
+		// steps.CheckNumberOfLetters();
+
+	}
+
+	@Test
+	public void LetterFromOneUserTrashAndMarkAsImportant()
+			throws InterruptedException {
 
 		steps.login("Valery6693@gmail.com", "11kesha2011");
 		steps.sendMessage();
-		steps.closeDriver();
-		steps.initBrowser();
-		steps.login("Valery66934@gmail.com", "dslr0101");
-		steps.setSpam();
-		steps.closeDriver();
-		steps.initBrowser();
-		steps.login("Valery6693@gmail.com", "11kesha2011");
-		
-		steps.sendMessage();
-		steps.closeDriver();
-		steps.initBrowser();
-		steps.login("Valery66934@gmail.com", "dslr0101");
-		steps.ToSeeSpam();
+		// steps.closeDriver();
+		// steps.initBrowser();
+		// steps.login("Valery66934@gmail.com", "dslr0101");
+		// steps.setSpam();
+		// steps.closeDriver();
+		// steps.initBrowser();
+		// steps.login("Valery6693@gmail.com", "11kesha2011");
+		//
+		// steps.sendMessage();
+		// steps.closeDriver();
+		// steps.initBrowser();
+		// steps.login("Valery66934@gmail.com", "dslr0101");
+		// steps.ToSeeSpam();
+		// steps.CheckNumberOfLetters();
 
 	}
 
 	@AfterTest
 	public void afterTest() {
-	//steps.closeDriver();
+		// steps.closeDriver();
 	}
 }

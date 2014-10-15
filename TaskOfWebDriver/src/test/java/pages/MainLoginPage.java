@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utils.Utils;
 
 public class MainLoginPage extends AbstractClass {
 
@@ -29,19 +28,6 @@ public class MainLoginPage extends AbstractClass {
 
 	@FindBy(css = "div.T-I.J-J5-Ji.T-I-KE.L3")
 	private WebElement clickWriteMessage;
-
-	@FindBy(css = "textarea.vO")
-	// textarea[@name='to']
-	private WebElement inputAdress;
-
-	@FindBy(xpath = "//input[@name='subjectbox']")
-	private WebElement writeSubject;
-
-	@FindBy(xpath = "//div[@class='Am Al editable']/iframe")
-	private WebElement writeBodyMessage;
-
-	@FindBy(xpath = "//div[@class='T-I J-J5-Ji aoO T-I-atl L3']")
-	private WebElement clickSendMessage;
 
 	@FindBy(xpath = "//div[@class='T-Jo-auh']")
 	private WebElement chooseLetter;
@@ -69,14 +55,9 @@ public class MainLoginPage extends AbstractClass {
 		logger.info("Login performed");
 	}
 
-	public void newMessage() {
-	
-		clickWriteMessage.click();
-		inputAdress.sendKeys("valery66934@gmail.com");
-		writeSubject.sendKeys(Utils.getRandomString(6));
-		writeBodyMessage.sendKeys("Heelogit!!!!");
-		clickSendMessage.click();
+	public void clickNewMessage() {
 
+		clickWriteMessage.click();
 		logger.info("Login performed");
 	}
 
