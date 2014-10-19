@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 public class MainLoginPage extends AbstractClass {
 
 	private final Logger logger = Logger.getLogger(MainLoginPage.class);
@@ -37,6 +36,15 @@ public class MainLoginPage extends AbstractClass {
 
 	@FindBy(xpath = "//div[@class='ae4.aDM']")
 	private WebElement theFirstLetter;
+
+	@FindBy(xpath = "//div[@class='aos T-I-J3 J-J5-Ji']")
+	private WebElement buttonSetting;
+
+	@FindBy(xpath = "//div[@class='J-N aMS']")
+	private WebElement buttonSettingInContextMenu;
+	
+	@FindBy(xpath="//td[@class='xY a4W']" )
+	private WebElement openLetter;
 
 	public MainLoginPage(WebDriver driver) {
 		super(driver);
@@ -68,6 +76,15 @@ public class MainLoginPage extends AbstractClass {
 		chooseLetter.click();
 		inputToSpam.click();
 
+	}
+
+	public void inputSetting() {
+		buttonSetting.click();
+		buttonSettingInContextMenu.click();
+	}
+	
+	public void openLetter(){
+		openLetter.click();
 	}
 
 }

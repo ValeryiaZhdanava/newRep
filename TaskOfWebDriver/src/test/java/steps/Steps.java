@@ -7,7 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import pages.EmailPage;
+import pages.ForwardPage;
 import pages.MainLoginPage;
+import pages.SettingPage;
 import pages.SpamPage;
 
 public class Steps {
@@ -49,12 +51,36 @@ public class Steps {
 	}
 
 	public void CheckNumberOfLetters() {
-		 SpamPage spage = new SpamPage(driver);
-		 spage.CheckNumberOfLetters();
+		SpamPage spage = new SpamPage(driver);
+		spage.CheckNumberOfLetters();
 
+	}
+
+	public void inputSetting() {
+		MainLoginPage page = new MainLoginPage(driver);
+		page.inputSetting();
+
+	}
+
+	public void ChooseForwardingAndPOP() {
+		SettingPage setpage = new SettingPage(driver);
+		setpage.ChooseForwardingAndPOP();
+	}
+
+	public void addForwardAdress() {
+		ForwardPage fpage = new ForwardPage(driver);
+		fpage.addForwardAdress();
 	}
 
 	public void closeDriver() {
 		driver.quit();
 	}
+	
+	public void openLetter(){
+		MainLoginPage page = new MainLoginPage(driver);
+		page.openLetter();
+		
+	}
+	
+
 }

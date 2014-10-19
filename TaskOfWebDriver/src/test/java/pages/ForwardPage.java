@@ -1,0 +1,55 @@
+package pages;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ForwardPage extends AbstractClass {
+	private final Logger logger = Logger.getLogger(ForwardPage.class);
+
+	@FindBy(xpath = "//input[@value='Add a forwarding address']")
+	private WebElement addForwardingAdress;
+
+	@FindBy(xpath = "//div[@class='PN']/input[@type='text']")
+	private WebElement enterForwardingAddress;
+
+	@FindBy(xpath = "//div[@class='Kj-JD-Jl']/button[@name='next']")
+	// /button[@name='next']
+	private WebElement buttonNext;
+
+	@FindBy(xpath = "//iframe[@class='ds']")
+	private WebElement frameConfirmforwardingAddress;
+
+	@FindBy(xpath = "//input[@value='Proceed']")
+	private WebElement buttonProceed;
+	
+	@FindBy(name="ok")
+	private WebElement buttonOk;
+	
+	
+	
+
+	public void addForwardAdress() {
+		addForwardingAdress.click();
+		enterForwardingAddress.sendKeys("webdrivertestemail@gmail.com");
+		buttonNext.click();
+
+		driver.switchTo().frame(frameConfirmforwardingAddress);
+		buttonProceed.click();
+		driver.switchTo().parentFrame();
+		buttonOk.click();
+	}
+
+	public ForwardPage(WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(this.driver, this);
+	}
+
+	@Override
+	public void openPage() {
+
+	}
+
+}
