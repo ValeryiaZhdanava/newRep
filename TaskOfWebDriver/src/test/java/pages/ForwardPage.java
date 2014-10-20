@@ -28,6 +28,9 @@ public class ForwardPage extends AbstractClass {
 	@FindBy(name="ok")
 	private WebElement buttonOk;
 	
+	@FindBy(xpath = "//input[@value='1'][@name='sx_em']")
+	private WebElement clickRadiobutton;
+	
 	
 	
 
@@ -40,6 +43,10 @@ public class ForwardPage extends AbstractClass {
 		buttonProceed.click();
 		driver.switchTo().parentFrame();
 		buttonOk.click();
+	}
+	
+	public void forwardACopy(){
+		clickRadiobutton.click();
 	}
 
 	public ForwardPage(WebDriver driver) {

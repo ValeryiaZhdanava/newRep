@@ -7,7 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import pages.EmailPage;
+import pages.FilterPage;
 import pages.ForwardPage;
+import pages.Letter;
 import pages.MainLoginPage;
 import pages.SettingPage;
 import pages.SpamPage;
@@ -64,8 +66,15 @@ public class Steps {
 
 	public void ChooseForwardingAndPOP() {
 		SettingPage setpage = new SettingPage(driver);
-		setpage.ChooseForwardingAndPOP();
+		setpage.chooseForwardingAndPOP();
 	}
+	
+	public void chooseFilters() {
+		SettingPage setpage = new SettingPage(driver);
+		setpage.chooseFilters();
+		// logger.info("Login page opened");
+	}
+	
 
 	public void addForwardAdress() {
 		ForwardPage fpage = new ForwardPage(driver);
@@ -75,12 +84,30 @@ public class Steps {
 	public void closeDriver() {
 		driver.quit();
 	}
-	
-	public void openLetter(){
+
+	public void openLetter() {
 		MainLoginPage page = new MainLoginPage(driver);
 		page.openLetter();
-		
+
+	}
+
+	public void clickLink() {
+		Letter letter = new Letter(driver);
+		letter.clickLink();
+	}
+
+	public void forwardACopy() {
+		ForwardPage fpage = new ForwardPage(driver);
+		fpage.forwardACopy();
 	}
 	
+	public void createANewFilterWithSetting(){
+		FilterPage filpage = new FilterPage(driver);
+		filpage.createANewFilterWithSetting();
+		
+	}
+//	public void fillFieldOfFilter(){
+//		
+//	}
 
 }

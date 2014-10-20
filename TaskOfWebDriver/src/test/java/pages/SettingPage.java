@@ -11,11 +11,20 @@ public class SettingPage extends AbstractClass {
 
 	@FindBy(xpath = "//div/a[@href='https://mail.google.com/mail/u/0/#settings/fwdandpop']")
 	private WebElement chooseForwarding;
+	
+	@FindBy(xpath = "//div/a[@href='https://mail.google.com/mail/u/0/#settings/filters']")
+	private WebElement chooseFilters;		
 
-	public void ChooseForwardingAndPOP() {
+	public void chooseForwardingAndPOP() {
 		chooseForwarding.click();
 		// logger.info("Login page opened");
 	}
+	
+	public void chooseFilters() {
+		chooseFilters.click();
+		// logger.info("Login page opened");
+	}
+	
 
 	public SettingPage(WebDriver driver) {
 		super(driver);

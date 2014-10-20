@@ -32,7 +32,8 @@ public class LetterGoToSpam {
 	// step.sendMessage();
 	// step.closeDriver();
 	// step.initBrowser();
-	// step.login("Valery66934@gmail.com", "dslr0101"); //the thrid mail: WebDriverTestEmail // 111sun111
+	// step.login("Valery66934@gmail.com", "dslr0101"); //the thrid mail:
+	// WebDriverTestEmail // 111sun111
 	// step.ToSeeSpam();
 	// step.CheckNumberOfLetters();
 	//
@@ -48,13 +49,19 @@ public class LetterGoToSpam {
 //		step.addForwardAdress();
 //		step.closeDriver();
 //		step.initBrowser();
-		step.login("webdrivertestemail@gmail.com", "111sun111");
-		step.openLetter();
-		// steps.setSpam();
-		// steps.closeDriver();
-		// steps.initBrowser();
-		// steps.login("Valery6693@gmail.com", "11kesha2011");
-		//
+//		step.login("webdrivertestemail@gmail.com", "111sun111");
+//		step.openLetter();
+//		step.clickLink();
+//		Thread.sleep(1000);
+//		step.closeDriver();
+//		step.initBrowser();
+		step.login("Valery66934@gmail.com", "dslr0101");
+		step.inputSetting();
+		step.ChooseForwardingAndPOP();
+		step.forwardACopy();
+		step.chooseFilters();
+		step.createANewFilterWithSetting();
+
 		// steps.sendMessage();
 		// steps.closeDriver();
 		// steps.initBrowser();
