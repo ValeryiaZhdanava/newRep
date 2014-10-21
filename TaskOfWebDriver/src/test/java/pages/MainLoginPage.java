@@ -1,6 +1,6 @@
 package pages;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,8 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainLoginPage extends AbstractClass {
 
-	private final Logger logger = Logger.getLogger(MainLoginPage.class);
-	// private final String BASE_URL = "https://www.gmail.com/";
+	// private final Logger logger = Logger.getLogger(MainLoginPage.class);
 	private final String BASE_URL = "https://mail.google.com/mail/";
 	WebDriverWait wait = new WebDriverWait(driver, 150);
 
@@ -42,8 +41,8 @@ public class MainLoginPage extends AbstractClass {
 
 	@FindBy(xpath = "//div[@class='J-N aMS']")
 	private WebElement buttonSettingInContextMenu;
-	
-	@FindBy(xpath="//td[@class='xY a4W']" )
+
+	@FindBy(xpath = "//td[@class='xY a4W']")
 	private WebElement openLetter;
 
 	public MainLoginPage(WebDriver driver) {
@@ -53,20 +52,20 @@ public class MainLoginPage extends AbstractClass {
 
 	public void openPage() {
 		driver.navigate().to(BASE_URL);
-		logger.info("Login page opened");
+
 	}
 
 	public void login(String login, String password) {
 		inputLogin.sendKeys(login);
 		inputPassword.sendKeys(password);
 		buttonSubmit.submit();
-		logger.info("Login performed");
+
 	}
 
 	public void clickNewMessage() {
 
 		clickWriteMessage.click();
-		logger.info("Login performed");
+
 	}
 
 	public void setSpam() {
@@ -82,8 +81,8 @@ public class MainLoginPage extends AbstractClass {
 		buttonSetting.click();
 		buttonSettingInContextMenu.click();
 	}
-	
-	public void openLetter(){
+
+	public void openLetter() {
 		openLetter.click();
 	}
 

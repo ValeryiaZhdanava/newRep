@@ -20,8 +20,8 @@ public class Steps {
 
 	public void initBrowser() {
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		logger.info("Browser started");
 	}
 
@@ -38,7 +38,7 @@ public class Steps {
 		EmailPage epage = new EmailPage(driver);
 		page.clickNewMessage();
 		epage.newMessage();
-
+		logger.info("Message is sent");
 	}
 
 	public void setSpam() {
@@ -48,20 +48,17 @@ public class Steps {
 
 	public void ToSeeSpam() {
 		SpamPage spage = new SpamPage(driver);
-		spage.ToSeeSpam();
-		// spage.openPage();
+		spage.ToSeeSpam();	
 	}
 
 	public void CheckNumberOfLetters() {
 		SpamPage spage = new SpamPage(driver);
 		spage.CheckNumberOfLetters();
-
 	}
 
 	public void inputSetting() {
 		MainLoginPage page = new MainLoginPage(driver);
 		page.inputSetting();
-
 	}
 
 	public void ChooseForwardingAndPOP() {
@@ -71,14 +68,13 @@ public class Steps {
 	
 	public void chooseFilters() {
 		SettingPage setpage = new SettingPage(driver);
-		setpage.chooseFilters();
-		// logger.info("Login page opened");
+		setpage.chooseFilters();		
 	}
 	
-
 	public void addForwardAdress() {
 		ForwardPage fpage = new ForwardPage(driver);
 		fpage.addForwardAdress();
+		logger.info("Added a forwarding address");
 	}
 
 	public void closeDriver() {
@@ -88,7 +84,6 @@ public class Steps {
 	public void openLetter() {
 		MainLoginPage page = new MainLoginPage(driver);
 		page.openLetter();
-
 	}
 
 	public void clickLink() {

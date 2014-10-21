@@ -1,0 +1,4 @@
+12:36:03,034 INFOmainSteps:initBrowser:25-Browser started
+12:36:04,655 INFOmainMainLoginPage:openPage:59-Login page opened
+12:36:06,263 INFOmainMainLoginPage:login:66-Login performed
+12:36:06,263 INFOmainSteps:login:32-Login performed

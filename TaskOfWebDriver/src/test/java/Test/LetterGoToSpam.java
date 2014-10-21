@@ -43,18 +43,18 @@ public class LetterGoToSpam {
 	public void LetterFromOneUserTrashAndMarkAsImportant()
 			throws InterruptedException {
 
-//		step.login("Valery66934@gmail.com", "dslr0101");
-//		step.inputSetting();
-//		step.ChooseForwardingAndPOP();
-//		step.addForwardAdress();
-//		step.closeDriver();
-//		step.initBrowser();
-//		step.login("webdrivertestemail@gmail.com", "111sun111");
-//		step.openLetter();
-//		step.clickLink();
-//		Thread.sleep(1000);
-//		step.closeDriver();
-//		step.initBrowser();
+		// step.login("Valery66934@gmail.com", "dslr0101");
+		// step.inputSetting();
+		// step.ChooseForwardingAndPOP();
+		// step.addForwardAdress();
+		// step.closeDriver();
+		// step.initBrowser();
+		// step.login("webdrivertestemail@gmail.com", "111sun111");
+		// step.openLetter();
+		// step.clickLink();
+		// Thread.sleep(1000);
+		// step.closeDriver();
+		// step.initBrowser();
 		step.login("Valery66934@gmail.com", "dslr0101");
 		step.inputSetting();
 		step.ChooseForwardingAndPOP();
