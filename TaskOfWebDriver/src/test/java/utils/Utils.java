@@ -1,5 +1,9 @@
 package utils;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 
 public class Utils {
@@ -14,4 +18,27 @@ public class Utils {
 		return sb.toString();
 	}
 
+	@SuppressWarnings("resource")
+	public static String getFile(int fileSize) {
+
+		FileWriter fileWriter = null;
+		File file = null;
+		try {
+			file = new File("file.txt");
+			fileWriter = new FileWriter(file);
+			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+			while (file.length() < fileSize) {
+				bufferedWriter.write(AB);
+			}
+			System.out.println(file.length());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return file.getAbsolutePath();
+	}
+
+	// public static void getAbsolutePath() {
+	//
+	// }
 }

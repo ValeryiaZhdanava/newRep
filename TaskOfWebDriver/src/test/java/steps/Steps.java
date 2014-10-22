@@ -41,6 +41,19 @@ public class Steps {
 		logger.info("Message is sent");
 	}
 
+	public void sendMessageWithAttach() throws InterruptedException {
+		MainLoginPage page = new MainLoginPage(driver);
+		EmailPage epage = new EmailPage(driver);
+		page.clickNewMessage();
+		epage.newMessageWithAttach();
+		logger.info("Message with attach is sent");
+	}
+
+	public void createNewFile() throws Exception {
+		EmailPage epage = new EmailPage(driver);
+		epage.attacheFile();
+	}
+
 	public void setSpam() {
 		MainLoginPage page = new MainLoginPage(driver);
 		page.setSpam();
@@ -48,7 +61,7 @@ public class Steps {
 
 	public void ToSeeSpam() {
 		SpamPage spage = new SpamPage(driver);
-		spage.ToSeeSpam();	
+		spage.ToSeeSpam();
 	}
 
 	public void CheckNumberOfLetters() {
@@ -65,12 +78,12 @@ public class Steps {
 		SettingPage setpage = new SettingPage(driver);
 		setpage.chooseForwardingAndPOP();
 	}
-	
+
 	public void chooseFilters() {
 		SettingPage setpage = new SettingPage(driver);
-		setpage.chooseFilters();		
+		setpage.chooseFilters();
 	}
-	
+
 	public void addForwardAdress() {
 		ForwardPage fpage = new ForwardPage(driver);
 		fpage.addForwardAdress();
@@ -95,14 +108,14 @@ public class Steps {
 		ForwardPage fpage = new ForwardPage(driver);
 		fpage.forwardACopy();
 	}
-	
-	public void createANewFilterWithSetting(){
+
+	public void createANewFilterWithSetting() {
 		FilterPage filpage = new FilterPage(driver);
 		filpage.createANewFilterWithSetting();
-		
+
 	}
-//	public void fillFieldOfFilter(){
-//		
-//	}
+	// public void fillFieldOfFilter(){
+	//
+	// }
 
 }

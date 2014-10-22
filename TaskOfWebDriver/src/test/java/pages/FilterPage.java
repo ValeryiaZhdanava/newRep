@@ -26,8 +26,14 @@ public class FilterPage extends AbstractClass {
 	@FindBy(name = "ok")
 	private WebElement buttonOk;
 
-	@FindBy(xpath = "//div[@class='nH lZ']/input[6]")
+	@FindBy(xpath = "//label[text()='Delete it']/../input") //div[@class='nH lZ'][1]")
 	private WebElement checkDeleteIt;
+	
+	@FindBy(xpath = "//label[text()='Always mark it as important']/../input")
+	private WebElement checkAlwaysMarkAsImportant;
+	
+	@FindBy(xpath = "//div[@class='T-I J-J5-Ji Zx acL T-I-atl L3']")
+	private WebElement buttonCreateFilter;
 
 	public void createANewFilterWithSetting() {
 		createANewFilter.click();
@@ -36,11 +42,9 @@ public class FilterPage extends AbstractClass {
 		checkCreate.click();
 		buttonOk.click();
 		checkDeleteIt.click();
+		checkAlwaysMarkAsImportant.click();
+		buttonCreateFilter.click();
 	}
-
-	// public void fillFieldOfFilter(){
-	// inputFieldFrom.sendKeys("Valery6693@gmail.com", "11kesha2011");
-	// }
 
 	public FilterPage(WebDriver driver) {
 		super(driver);

@@ -17,7 +17,7 @@ public class SpamPage extends AbstractClass {
 	@FindBy(id = "gbqfq")
 	private WebElement inputText;
 
-	@FindBy(xpath = "//span[@class='gbqfi gb_Fa']")
+	@FindBy(xpath = "//span[@class='gbqfi gb_Ia']")
 	private WebElement inputSearch;
 
 	@FindBy(xpath = "//div[@class='zA zE']")
@@ -30,7 +30,7 @@ public class SpamPage extends AbstractClass {
 
 	}
 
-	public boolean CheckNumberOfLetters() {
+	public void CheckNumberOfLetters() {
 
 		for (int i = 0; i < allLetters.size(); i++) {
 			String email = allLetters.get(i).getAttribute("email");
@@ -38,12 +38,12 @@ public class SpamPage extends AbstractClass {
 				k++;
 			}
 			if (k == 2) {
-				return true;
-				// logger.info("The test is successful");
+				logger.info("The test is successful");// return true;
 			}
 
 		}
-		return false;
+		logger.info("The test is faild");
+		// return false;
 		// logger.info("The test is failed");
 
 	}
