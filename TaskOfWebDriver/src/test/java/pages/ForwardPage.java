@@ -24,15 +24,15 @@ public class ForwardPage extends AbstractClass {
 
 	@FindBy(xpath = "//input[@value='Proceed']")
 	private WebElement buttonProceed;
-	
-	@FindBy(name="ok")
+
+	@FindBy(name = "ok")
 	private WebElement buttonOk;
-	
+
 	@FindBy(xpath = "//input[@value='1'][@name='sx_em']")
 	private WebElement clickRadiobutton;
-	
-	
-	
+
+	@FindBy(xpath = "//button[ancestor::div[@class='nH Tv1JD']][text()='Save Changes']")
+	private WebElement clickSaveChange;
 
 	public void addForwardAdress() {
 		addForwardingAdress.click();
@@ -44,9 +44,10 @@ public class ForwardPage extends AbstractClass {
 		driver.switchTo().parentFrame();
 		buttonOk.click();
 	}
-	
-	public void forwardACopy(){
+
+	public void forwardACopy() {
 		clickRadiobutton.click();
+		clickSaveChange.click();
 	}
 
 	public ForwardPage(WebDriver driver) {

@@ -1,218 +1,261 @@
-12:36:03,034 INFOmainSteps:initBrowser:25-Browser started
-12:36:04,655 INFOmainMainLoginPage:openPage:59-Login page opened
-12:36:06,263 INFOmainMainLoginPage:login:66-Login performed
-12:36:06,263 INFOmainSteps:login:32-Login performed
-12:54:58,977 INFOmainSteps:initBrowser:25-Browser started
-12:55:02,457 INFOmainSteps:login:32-Login performed
-13:03:38,893 INFOmainSteps:initBrowser:25-Browser started
-13:03:42,425 INFOmainSteps:login:32-Login performed
-13:06:17,033 INFOmainSteps:initBrowser:25-Browser started
-13:06:20,498 INFOmainSteps:login:32-Login performed
-13:06:30,713 INFOmainEmailPage:newMessage:33-Login performed
-13:06:30,713 INFOmainSteps:sendMessage:41-Message is sent
-13:06:36,017 INFOmainSteps:initBrowser:25-Browser started
-13:06:38,895 INFOmainSteps:login:32-Login performed
-13:07:08,457 INFOmainSteps:initBrowser:25-Browser started
-13:07:11,378 INFOmainSteps:login:32-Login performed
-13:07:17,601 INFOmainEmailPage:newMessage:33-Login performed
-13:07:17,601 INFOmainSteps:sendMessage:41-Message is sent
-13:07:23,376 INFOmainSteps:initBrowser:25-Browser started
-13:07:26,594 INFOmainSteps:login:32-Login performed
-13:23:47,165 INFOmainSteps:initBrowser:25-Browser started
-13:23:50,390 INFOmainSteps:login:32-Login performed
-13:28:12,899 INFOmainSteps:initBrowser:25-Browser started
-13:28:15,603 INFOmainSteps:login:32-Login performed
-13:28:25,292 INFOmainEmailPage:newMessage:33-Login performed
-13:28:25,293 INFOmainSteps:sendMessage:41-Message is sent
-13:28:30,556 INFOmainSteps:initBrowser:25-Browser started
-13:28:33,607 INFOmainSteps:login:32-Login performed
-13:28:42,452 INFOmainSteps:initBrowser:25-Browser started
-13:28:45,232 INFOmainSteps:login:32-Login performed
-13:28:52,502 INFOmainEmailPage:newMessage:33-Login performed
-13:28:52,503 INFOmainSteps:sendMessage:41-Message is sent
-13:28:57,783 INFOmainSteps:initBrowser:25-Browser started
-13:29:00,853 INFOmainSteps:login:32-Login performed
-13:36:35,689 INFOmainSteps:initBrowser:25-Browser started
-13:36:41,121 INFOmainSteps:login:32-Login performed
-13:36:50,698 INFOmainEmailPage:newMessage:33-Login performed
-13:36:50,698 INFOmainSteps:sendMessage:41-Message is sent
-13:36:56,076 INFOmainSteps:initBrowser:25-Browser started
-13:36:59,090 INFOmainSteps:login:32-Login performed
-13:37:08,172 INFOmainSteps:initBrowser:25-Browser started
-13:37:12,056 INFOmainSteps:login:32-Login performed
-13:37:25,029 INFOmainEmailPage:newMessage:33-Login performed
-13:37:25,029 INFOmainSteps:sendMessage:41-Message is sent
-13:37:30,261 INFOmainSteps:initBrowser:25-Browser started
-13:37:33,571 INFOmainSteps:login:32-Login performed
-13:58:27,007 INFOmainSteps:initBrowser:25-Browser started
-13:58:30,174 INFOmainSteps:login:32-Login performed
-13:58:45,816 INFOmainEmailPage:newMessage:33-Login performed
-13:58:45,816 INFOmainSteps:sendMessage:41-Message is sent
-13:58:51,550 INFOmainSteps:initBrowser:25-Browser started
-13:58:54,599 INFOmainSteps:login:32-Login performed
-13:59:23,387 INFOmainSteps:initBrowser:25-Browser started
-13:59:26,771 INFOmainSteps:login:32-Login performed
-13:59:37,375 INFOmainEmailPage:newMessage:33-Login performed
-13:59:37,376 INFOmainSteps:sendMessage:41-Message is sent
-13:59:42,650 INFOmainSteps:initBrowser:25-Browser started
-13:59:46,531 INFOmainSteps:login:32-Login performed
-14:00:12,036 INFOmainSpamPage:CheckNumberOfLetters:45-The test is raild
-14:43:29,511 INFOmainSteps:initBrowser:25-Browser started
-14:43:33,054 INFOmainSteps:login:32-Login performed
-14:43:49,260 INFOmainEmailPage:newMessage:33-Login performed
-14:43:49,260 INFOmainSteps:sendMessage:41-Message is sent
-14:43:54,973 INFOmainSteps:initBrowser:25-Browser started
-14:43:57,845 INFOmainSteps:login:32-Login performed
-14:44:07,406 INFOmainSteps:initBrowser:25-Browser started
-14:44:11,055 INFOmainSteps:login:32-Login performed
-14:44:27,550 INFOmainEmailPage:newMessage:33-Login performed
-14:44:27,550 INFOmainSteps:sendMessage:41-Message is sent
-14:44:33,233 INFOmainSteps:initBrowser:25-Browser started
-14:44:37,285 INFOmainSteps:login:32-Login performed
-14:45:11,626 INFOmainSpamPage:CheckNumberOfLetters:45-The test is faild
-15:29:09,269 INFOmainSteps:initBrowser:25-Browser started
-15:29:13,336 INFOmainSteps:login:32-Login performed
-15:34:45,535 INFOmainSteps:initBrowser:25-Browser started
-15:34:50,162 INFOmainSteps:login:32-Login performed
-15:38:26,690 INFOmainSteps:initBrowser:25-Browser started
-15:38:30,308 INFOmainSteps:login:32-Login performed
-15:41:47,139 INFOmainSteps:initBrowser:25-Browser started
-15:41:50,461 INFOmainSteps:login:32-Login performed
-15:42:29,479 INFOmainSteps:initBrowser:25-Browser started
-15:42:32,521 INFOmainSteps:login:32-Login performed
-15:51:43,474 INFOmainSteps:initBrowser:25-Browser started
-15:51:46,566 INFOmainSteps:login:32-Login performed
-15:52:45,206 INFOmainSteps:initBrowser:25-Browser started
-15:52:48,682 INFOmainSteps:login:32-Login performed
-15:53:36,683 INFOmainSteps:initBrowser:25-Browser started
-15:53:40,434 INFOmainSteps:login:32-Login performed
-15:56:28,229 INFOmainSteps:initBrowser:25-Browser started
-15:56:31,339 INFOmainSteps:login:32-Login performed
-15:58:40,064 INFOmainSteps:initBrowser:25-Browser started
-15:58:43,352 INFOmainSteps:login:32-Login performed
-16:00:19,746 INFOmainSteps:initBrowser:25-Browser started
-16:00:22,780 INFOmainSteps:login:32-Login performed
-16:01:08,819 INFOmainSteps:initBrowser:25-Browser started
-16:01:12,533 INFOmainSteps:login:32-Login performed
-16:04:28,042 INFOmainSteps:initBrowser:25-Browser started
-16:04:32,707 INFOmainSteps:login:32-Login performed
-16:05:29,143 INFOmainSteps:initBrowser:25-Browser started
-16:05:34,195 INFOmainSteps:login:32-Login performed
-16:07:39,497 INFOmainSteps:initBrowser:25-Browser started
-16:07:44,359 INFOmainSteps:login:32-Login performed
-16:18:14,375 INFOmainSteps:initBrowser:25-Browser started
-16:18:18,012 INFOmainSteps:login:32-Login performed
-16:18:38,673 INFOmainEmailPage:newMessageWithAttach:50-Login performed
-16:18:38,673 INFOmainSteps:sendMessageWithAttach:49-Message with attach is sent
-13:18:04,106 INFOmainSteps:initBrowser:25-Browser started
-13:18:08,246 INFOmainSteps:login:32-Login performed
-13:18:17,912 INFOmainEmailPage:newMessageWithAttach:53-Login performed
-13:18:17,912 INFOmainSteps:sendMessageWithAttach:49-Message with attach is sent
-13:22:37,559 INFOmainSteps:initBrowser:27-Browser started
-13:22:41,005 INFOmainSteps:login:34-Login performed
-13:22:48,862 INFOmainEmailPage:newMessageWithAttach:53-Login performed
-13:22:48,862 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-13:24:47,760 INFOmainSteps:initBrowser:27-Browser started
-13:24:52,018 INFOmainSteps:login:34-Login performed
-13:25:21,657 INFOmainSteps:initBrowser:27-Browser started
-13:25:24,886 INFOmainSteps:login:34-Login performed
-13:25:32,126 INFOmainEmailPage:newMessageWithAttach:53-Login performed
-13:25:32,127 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-13:26:19,992 INFOmainSteps:initBrowser:27-Browser started
-13:26:23,117 INFOmainSteps:login:34-Login performed
-13:26:29,873 INFOmainEmailPage:newMessageWithAttach:53-Login performed
-13:26:29,873 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-13:30:15,115 INFOmainSteps:initBrowser:27-Browser started
-13:30:18,565 INFOmainSteps:login:34-Login performed
-13:30:25,306 INFOmainEmailPage:newMessageWithAttach:53-Login performed
-13:30:25,306 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-13:31:22,894 INFOmainSteps:initBrowser:27-Browser started
-13:31:25,793 INFOmainSteps:login:34-Login performed
-13:31:32,186 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-13:54:07,590 INFOmainSteps:initBrowser:27-Browser started
-13:54:10,896 INFOmainSteps:login:34-Login performed
-13:54:17,275 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-13:54:17,282 INFOmainEmailPage:createNewFile:58-File create!!!
-14:05:03,557 INFOmainSteps:initBrowser:27-Browser started
-14:05:06,453 INFOmainSteps:login:34-Login performed
-14:05:12,209 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-14:05:12,229 INFOmainEmailPage:createNewFile:59-File create!!!
-09:06:44,116 INFOmainSteps:initBrowser:27-Browser started
-09:06:51,733 INFOmainSteps:login:34-Login performed
-09:07:14,438 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-09:07:14,608 INFOmainEmailPage:createNewFile:60-File create!!!
-09:39:28,278 INFOmainSteps:initBrowser:27-Browser started
-09:39:33,376 INFOmainSteps:login:34-Login performed
-09:39:49,834 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-09:42:37,923 INFOmainSteps:initBrowser:27-Browser started
-09:42:40,795 INFOmainSteps:login:34-Login performed
-09:42:54,703 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-09:46:48,005 INFOmainSteps:initBrowser:27-Browser started
-09:46:50,975 INFOmainSteps:login:34-Login performed
-09:47:03,666 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-09:49:09,715 INFOmainSteps:initBrowser:27-Browser started
-09:49:12,709 INFOmainSteps:login:34-Login performed
-09:49:27,740 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-09:49:27,749 INFOmainEmailPage:createNewFile:60-File create!!!
-09:50:36,193 INFOmainSteps:initBrowser:27-Browser started
-09:50:39,733 INFOmainSteps:login:34-Login performed
-09:50:49,827 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-09:50:49,851 INFOmainEmailPage:createNewFile:60-File create!!!
-10:26:20,844 INFOmainSteps:initBrowser:27-Browser started
-10:26:25,814 INFOmainSteps:login:34-Login performed
-10:26:40,632 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:26:42,446 INFOmainEmailPage:createNewFile:61-File create!!!
-10:27:27,746 INFOmainSteps:initBrowser:27-Browser started
-10:27:30,438 INFOmainSteps:login:34-Login performed
-10:27:52,935 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:27:53,080 INFOmainEmailPage:createNewFile:61-File create!!!
-10:28:56,523 INFOmainSteps:initBrowser:27-Browser started
-10:29:00,003 INFOmainSteps:login:34-Login performed
-10:29:22,918 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:29:23,108 INFOmainEmailPage:createNewFile:61-File create!!!
-10:30:04,383 INFOmainSteps:initBrowser:27-Browser started
-10:30:08,622 INFOmainSteps:login:34-Login performed
-10:30:38,861 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:30:40,743 INFOmainEmailPage:createNewFile:61-File create!!!
-10:33:49,255 INFOmainSteps:initBrowser:27-Browser started
-10:33:53,165 INFOmainSteps:login:34-Login performed
-10:34:09,259 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:34:09,458 INFOmainEmailPage:createNewFile:61-File create!!!
-10:34:47,418 INFOmainSteps:initBrowser:27-Browser started
-10:34:49,989 INFOmainSteps:login:34-Login performed
-10:35:05,193 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:35:05,426 INFOmainEmailPage:createNewFile:61-File create!!!
-10:36:10,562 INFOmainSteps:initBrowser:27-Browser started
-10:36:14,637 INFOmainSteps:login:34-Login performed
-10:36:26,501 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:36:26,574 INFOmainEmailPage:createNewFile:61-File create!!!
-10:36:44,693 INFOmainSteps:initBrowser:27-Browser started
-10:36:48,249 INFOmainSteps:login:34-Login performed
-10:37:03,338 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:37:03,508 INFOmainEmailPage:createNewFile:61-File create!!!
-10:37:29,960 INFOmainSteps:initBrowser:27-Browser started
-10:37:34,997 INFOmainSteps:login:34-Login performed
-10:37:54,883 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:37:55,019 INFOmainEmailPage:createNewFile:61-File create!!!
-10:43:56,579 INFOmainSteps:initBrowser:27-Browser started
-10:44:30,951 INFOmainSteps:initBrowser:27-Browser started
-10:52:08,234 INFOmainSteps:initBrowser:27-Browser started
-10:52:11,718 INFOmainSteps:login:34-Login performed
-10:52:28,033 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:52:28,328 INFOmainEmailPage:createNewFile:61-File create!!!
-10:53:01,590 INFOmainSteps:initBrowser:27-Browser started
-10:53:05,635 INFOmainSteps:login:34-Login performed
-10:53:17,376 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-10:53:17,682 INFOmainEmailPage:createNewFile:61-File create!!!
-11:40:36,690 INFOmainSteps:initBrowser:27-Browser started
-11:40:41,661 INFOmainSteps:login:34-Login performed
-11:41:02,752 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-11:41:05,294 INFOmainEmailPage:attacheFile:81-File create!!!
-11:42:13,481 INFOmainSteps:initBrowser:27-Browser started
-11:42:17,531 INFOmainSteps:login:34-Login performed
-11:42:29,992 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-11:42:32,459 INFOmainEmailPage:attacheFile:81-File create!!!
-11:42:53,689 INFOmainSteps:initBrowser:27-Browser started
-11:42:57,696 INFOmainSteps:login:34-Login performed
-11:43:15,431 INFOmainSteps:sendMessageWithAttach:51-Message with attach is sent
-11:43:15,783 INFOmainEmailPage:attacheFile:81-File create!!!
+08:24:25,754 INFOmainSteps:initBrowser:28-Browser started
+08:24:29,606 INFOmainSteps:login:35-Login performed
+08:25:10,170 INFOmainEmailPage:newMessageWithAttach:83-Login performed
+08:25:10,170 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+08:26:15,077 INFOmainSteps:initBrowser:28-Browser started
+08:26:18,037 INFOmainSteps:login:35-Login performed
+08:26:57,133 INFOmainEmailPage:newMessageWithAttach:83-Login performed
+08:26:57,133 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+08:34:37,574 INFOmainSteps:initBrowser:28-Browser started
+08:34:41,335 INFOmainSteps:login:35-Login performed
+08:35:17,598 INFOmainEmailPage:newMessageWithAttach:83-Login performed
+08:35:17,598 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+08:36:53,721 INFOmainSteps:initBrowser:28-Browser started
+08:36:58,126 INFOmainSteps:login:35-Login performed
+08:37:45,832 INFOmainEmailPage:newMessageWithAttach:84-Login performed
+08:37:45,832 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+06:49:46,035 INFOmainSteps:initBrowser:28-Browser started
+06:49:49,948 INFOmainSteps:login:35-Login performed
+06:50:28,209 INFOmainEmailPage:newMessageWithAttach:84-Login performed
+06:50:28,209 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+06:54:47,832 INFOmainSteps:initBrowser:28-Browser started
+06:54:51,348 INFOmainSteps:login:35-Login performed
+06:55:27,243 INFOmainEmailPage:newMessageWithAttach:84-Login performed
+06:55:27,243 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+06:57:51,566 INFOmainSteps:initBrowser:28-Browser started
+06:57:54,983 INFOmainSteps:login:35-Login performed
+06:58:32,254 INFOmainEmailPage:newMessageWithAttach:86-Login performed
+06:58:32,254 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+07:00:40,370 INFOmainSteps:initBrowser:28-Browser started
+07:00:44,685 INFOmainSteps:login:35-Login performed
+07:00:58,870 INFOmainSteps:sendMessage:44-Message is sent
+07:03:43,671 INFOmainSteps:initBrowser:28-Browser started
+07:03:47,146 INFOmainSteps:login:35-Login performed
+07:04:18,764 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:04:18,764 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+07:04:20,993 INFOmainSteps:sendMessage:44-Message is sent
+07:04:37,608 INFOmainSteps:initBrowser:28-Browser started
+07:04:41,161 INFOmainSteps:login:35-Login performed
+07:05:19,362 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:05:19,362 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+07:05:21,657 INFOmainSteps:sendMessage:44-Message is sent
+07:06:37,004 INFOmainSteps:initBrowser:28-Browser started
+07:06:39,919 INFOmainSteps:login:35-Login performed
+07:08:49,639 INFOmainSteps:initBrowser:28-Browser started
+07:08:52,978 INFOmainSteps:login:35-Login performed
+07:09:24,547 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:09:24,547 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+07:09:26,809 INFOmainSteps:sendMessage:44-Message is sent
+07:10:14,775 INFOmainSteps:initBrowser:28-Browser started
+07:10:18,448 INFOmainSteps:login:35-Login performed
+07:10:51,882 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:10:51,883 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+07:10:54,099 INFOmainSteps:sendMessage:44-Message is sent
+07:11:03,924 INFOmainSteps:initBrowser:28-Browser started
+07:11:08,037 INFOmainSteps:login:35-Login performed
+07:12:00,009 INFOmainSteps:initBrowser:28-Browser started
+07:12:02,669 INFOmainSteps:login:35-Login performed
+07:12:37,645 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:12:37,645 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+07:12:44,816 INFOmainSteps:initBrowser:28-Browser started
+07:12:48,066 INFOmainSteps:login:35-Login performed
+07:15:20,541 INFOmainSteps:initBrowser:28-Browser started
+07:15:23,912 INFOmainSteps:login:35-Login performed
+07:15:41,774 INFOmainSteps:addForwardAdress:95-Added a forwarding address
+07:15:47,627 INFOmainSteps:initBrowser:28-Browser started
+07:15:51,342 INFOmainSteps:login:35-Login performed
+07:16:10,267 INFOmainSteps:initBrowser:28-Browser started
+07:16:13,295 INFOmainSteps:login:35-Login performed
+07:16:33,976 INFOmainSteps:initBrowser:28-Browser started
+07:16:37,449 INFOmainSteps:login:35-Login performed
+07:17:12,398 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:17:12,399 INFOmainSteps:sendMessageWithAttach:54-Message with attach is sent
+07:17:18,203 INFOmainSteps:initBrowser:28-Browser started
+07:17:21,537 INFOmainSteps:login:35-Login performed
+07:25:01,491 INFOmainSteps:initBrowser:28-Browser started
+07:25:04,145 INFOmainSteps:login:35-Login performed
+07:25:43,316 INFOmainSteps:initBrowser:28-Browser started
+07:25:46,174 INFOmainSteps:login:35-Login performed
+07:25:57,235 INFOmainSteps:addForwardAdress:95-Added a forwarding address
+07:26:04,060 INFOmainSteps:initBrowser:28-Browser started
+07:26:06,926 INFOmainSteps:login:35-Login performed
+07:26:18,587 INFOmainSteps:initBrowser:28-Browser started
+07:26:22,876 INFOmainSteps:login:35-Login performed
+07:41:02,598 INFOmainSteps:initBrowser:29-Browser started
+07:41:05,433 INFOmainSteps:login:36-Login performed
+07:41:47,274 INFOmainSteps:initBrowser:29-Browser started
+07:41:50,266 INFOmainSteps:login:36-Login performed
+07:42:09,999 INFOmainSteps:initBrowser:29-Browser started
+07:42:13,434 INFOmainSteps:login:36-Login performed
+07:43:25,949 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:43:25,950 INFOmainSteps:sendMessageWithAttach:55-Message with attach is sent
+07:43:31,978 INFOmainSteps:initBrowser:29-Browser started
+07:43:35,230 INFOmainSteps:login:36-Login performed
+07:47:54,186 INFOmainSteps:initBrowser:28-Browser started
+07:47:57,281 INFOmainSteps:login:36-Login performed
+07:48:14,051 INFOmainSteps:initBrowser:28-Browser started
+07:48:16,591 INFOmainSteps:login:36-Login performed
+07:49:29,666 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+07:49:29,666 INFOmainSteps:sendMessageWithAttach:57-Message with attach is sent
+07:49:35,235 INFOmainSteps:initBrowser:28-Browser started
+07:49:38,302 INFOmainSteps:login:36-Login performed
+07:55:29,528 INFOmainSteps:initBrowser:28-Browser started
+07:55:32,746 INFOmainSteps:login:36-Login performed
+08:13:24,641 INFOmainSteps:initBrowser:28-Browser started
+08:13:29,955 INFOmainSteps:login:36-Login performed
+08:14:50,824 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+08:14:50,825 INFOmainSteps:sendMessageWithAttach:57-Message with attach is sent
+08:14:52,948 INFOmainSteps:sendMessage:46-Message is sent
+08:15:38,991 INFOmainSteps:initBrowser:28-Browser started
+08:15:45,634 INFOmainSteps:initBrowser:28-Browser started
+08:16:01,987 INFOmainSteps:initBrowser:28-Browser started
+08:16:07,418 INFOmainSteps:initBrowser:28-Browser started
+08:16:10,713 INFOmainSteps:login:36-Login performed
+08:32:36,793 INFOmainSteps:initBrowser:29-Browser started
+08:32:39,815 INFOmainSteps:login:37-Login performed
+08:35:54,811 INFOmainSteps:initBrowser:29-Browser started
+08:35:57,891 INFOmainSteps:login:37-Login performed
+08:58:22,029 INFOmainSteps:initBrowser:29-Browser started
+08:58:26,227 INFOmainSteps:login:37-Login performed
+09:00:14,781 INFOmainSteps:initBrowser:29-Browser started
+09:00:18,873 INFOmainSteps:login:37-Login performed
+09:07:01,028 INFOmainSteps:initBrowser:29-Browser started
+09:07:05,521 INFOmainSteps:login:37-Login performed
+09:08:10,985 INFOmainSteps:initBrowser:29-Browser started
+09:08:14,565 INFOmainSteps:login:37-Login performed
+09:10:21,487 INFOmainSteps:initBrowser:29-Browser started
+09:10:26,146 INFOmainSteps:login:37-Login performed
+09:22:40,879 INFOmainSteps:initBrowser:29-Browser started
+09:22:44,549 INFOmainSteps:login:37-Login performed
+09:22:53,412 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:38-Letter with attach is in trash
+09:24:13,168 INFOmainSteps:initBrowser:29-Browser started
+09:24:16,532 INFOmainSteps:login:37-Login performed
+09:24:22,891 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:38-Letter with attach is in trash
+09:25:14,391 INFOmainSteps:initBrowser:29-Browser started
+09:25:17,624 INFOmainSteps:login:37-Login performed
+09:25:24,383 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:38-Letter with attach is in trash
+09:34:28,105 INFOmainSteps:initBrowser:29-Browser started
+09:34:34,273 INFOmainSteps:login:37-Login performed
+09:34:44,784 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:38-Letter with attach is in trash
+09:38:16,049 INFOmainSteps:initBrowser:29-Browser started
+09:38:19,759 INFOmainSteps:login:37-Login performed
+09:38:28,879 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:41-Letter with attach is in trash
+09:41:45,570 INFOmainSteps:initBrowser:29-Browser started
+09:41:48,500 INFOmainSteps:login:37-Login performed
+09:41:59,270 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:41-Letter with attach is in trash
+09:44:19,103 INFOmainSteps:initBrowser:29-Browser started
+09:44:22,100 INFOmainSteps:login:37-Login performed
+09:44:27,654 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:41-Letter with attach is in trash
+09:55:52,100 INFOmainSteps:initBrowser:29-Browser started
+09:55:55,490 INFOmainSteps:login:37-Login performed
+09:56:06,385 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:43-Letter with attach is in trash
+09:59:08,909 INFOmainSteps:initBrowser:29-Browser started
+09:59:11,862 INFOmainSteps:login:37-Login performed
+09:59:18,104 INFOmainTrashPage:checkSearchAttachmentMarkAsImportant:43-Letter with attach is in trash
+05:23:55,178 INFOmainSteps:initBrowser:29-Browser started
+05:24:00,456 INFOmainSteps:login:37-Login performed
+05:24:19,043 INFOmainTrashPage:checkSearchAttachment:43-Letter with attach is in trash
+05:27:24,148 INFOmainSteps:initBrowser:29-Browser started
+05:27:28,240 INFOmainSteps:login:37-Login performed
+05:27:33,812 INFOmainTrashPage:checkSearchAttachment:43-Letter with attach is in trash
+05:31:11,197 INFOmainSteps:initBrowser:29-Browser started
+05:31:14,028 INFOmainSteps:login:37-Login performed
+05:31:18,728 INFOmainTrashPage:checkSearchAttachment:43-Letter with attach is in trash
+05:36:41,256 INFOmainSteps:initBrowser:29-Browser started
+05:36:46,709 INFOmainSteps:login:37-Login performed
+05:36:51,739 INFOmainTrashPage:checkSearchAttachment:37-Letter with attach is in trash
+05:38:40,984 INFOmainSteps:initBrowser:29-Browser started
+05:38:45,154 INFOmainSteps:login:37-Login performed
+05:38:49,940 INFOmainTrashPage:checkSearchAttachmentAndMarkAsImportant:42-Letter with attach is in trash
+06:29:13,293 INFOmainSteps:initBrowser:29-Browser started
+06:29:18,179 INFOmainSteps:login:37-Login performed
+06:31:34,511 INFOmainSteps:initBrowser:29-Browser started
+06:31:37,591 INFOmainSteps:login:37-Login performed
+06:33:18,459 INFOmainSteps:initBrowser:29-Browser started
+06:33:21,793 INFOmainSteps:login:37-Login performed
+06:42:35,139 INFOmainSteps:initBrowser:29-Browser started
+06:42:38,598 INFOmainSteps:login:37-Login performed
+06:53:00,148 INFOmainSteps:initBrowser:29-Browser started
+06:53:04,470 INFOmainSteps:login:37-Login performed
+06:54:33,435 INFOmainSteps:initBrowser:29-Browser started
+06:54:37,051 INFOmainSteps:login:37-Login performed
+07:02:00,529 INFOmainSteps:initBrowser:29-Browser started
+07:02:03,801 INFOmainSteps:login:37-Login performed
+07:04:45,709 INFOmainSteps:initBrowser:29-Browser started
+07:04:48,839 INFOmainSteps:login:37-Login performed
+07:06:30,308 INFOmainSteps:initBrowser:29-Browser started
+07:06:34,350 INFOmainSteps:login:37-Login performed
+07:11:27,858 INFOmainSteps:initBrowser:29-Browser started
+07:11:31,367 INFOmainSteps:login:37-Login performed
+07:18:50,064 INFOmainSteps:initBrowser:29-Browser started
+07:18:53,735 INFOmainSteps:login:37-Login performed
+07:19:45,563 INFOmainSteps:initBrowser:29-Browser started
+07:19:49,448 INFOmainSteps:login:37-Login performed
+07:26:05,155 INFOmainSteps:initBrowser:29-Browser started
+07:26:08,395 INFOmainSteps:login:37-Login performed
+07:31:05,398 INFOmainSteps:initBrowser:29-Browser started
+07:31:08,678 INFOmainSteps:login:37-Login performed
+07:33:26,332 INFOmainSteps:initBrowser:29-Browser started
+07:33:29,593 INFOmainSteps:login:37-Login performed
+07:50:29,244 INFOmainSteps:initBrowser:28-Browser started
+07:50:32,588 INFOmainSteps:login:36-Login performed
+08:59:35,252 INFOmainSteps:initBrowser:28-Browser started
+08:59:39,462 INFOmainSteps:login:36-Login performed
+09:04:38,149 INFOmainSteps:initBrowser:28-Browser started
+09:04:41,915 INFOmainSteps:login:36-Login performed
+09:05:34,140 INFOmainSteps:initBrowser:28-Browser started
+09:05:38,524 INFOmainSteps:login:36-Login performed
+09:09:20,755 INFOmainSteps:initBrowser:28-Browser started
+09:09:24,494 INFOmainSteps:login:36-Login performed
+09:10:25,705 INFOmainSteps:initBrowser:28-Browser started
+09:10:28,675 INFOmainSteps:login:36-Login performed
+09:12:43,974 INFOmainSteps:initBrowser:28-Browser started
+09:12:47,172 INFOmainSteps:login:36-Login performed
+09:14:06,357 INFOmainSteps:initBrowser:28-Browser started
+09:14:09,296 INFOmainSteps:login:36-Login performed
+10:02:53,894 INFOmainSteps:initBrowser:28-Browser started
+10:02:57,970 INFOmainSteps:login:36-Login performed
+10:04:25,106 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+10:04:25,106 INFOmainSteps:sendMessageWithAttach:57-Message with attach is sent
+10:04:27,519 INFOmainSteps:sendMessage:46-Message is sent
+10:04:33,544 INFOmainSteps:initBrowser:28-Browser started
+10:04:37,475 INFOmainSteps:login:36-Login performed
+10:53:40,843 INFOmainSteps:initBrowser:28-Browser started
+10:53:45,941 INFOmainSteps:login:36-Login performed
+10:55:26,216 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+10:55:26,217 INFOmainSteps:sendMessageWithAttach:58-Message with attach is sent
+10:55:28,284 INFOmainSteps:sendMessage:46-Message is sent
+10:55:34,315 INFOmainSteps:initBrowser:28-Browser started
+10:55:37,066 INFOmainSteps:login:36-Login performed
+10:56:31,701 INFOmainSteps:initBrowser:28-Browser started
+10:56:34,887 INFOmainSteps:login:36-Login performed
+10:58:03,630 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+10:58:03,630 INFOmainSteps:sendMessageWithAttach:58-Message with attach is sent
+10:58:04,687 INFOmainSteps:sendMessage:46-Message is sent
+13:07:23,633 INFOmainSteps:initBrowser:28-Browser started
+13:07:27,058 INFOmainSteps:login:36-Login performed
+13:08:38,365 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+13:08:38,365 INFOmainSteps:sendMessageWithAttach:58-Message with attach is sent
+13:08:39,580 INFOmainSteps:sendMessage:46-Message is sent
+03:55:03,882 INFOmainSteps:initBrowser:28-Browser started
+03:55:07,198 INFOmainSteps:login:36-Login performed
+03:56:20,543 INFOmainEmailPage:newMessageWithAttach:87-Login performed
+03:56:20,543 INFOmainSteps:sendMessageWithAttach:58-Message with attach is sent
+03:56:21,677 INFOmainSteps:sendMessage:46-Message is sent
+05:01:53,592 INFOmainSteps:initBrowser:28-Browser started
+05:01:58,785 INFOmainSteps:login:36-Login performed
+05:04:20,987 INFOmainSteps:initBrowser:28-Browser started
+05:04:24,535 INFOmainSteps:login:36-Login performed
+05:05:11,607 INFOmainSteps:initBrowser:28-Browser started
+05:05:15,019 INFOmainSteps:login:36-Login performed
+05:13:23,487 INFOmainSteps:initBrowser:28-Browser started
+05:13:26,416 INFOmainSteps:login:36-Login performed
+05:14:59,507 INFOmainSteps:initBrowser:28-Browser started
+05:15:02,692 INFOmainSteps:login:36-Login performed
+05:15:56,890 INFOmainSteps:initBrowser:28-Browser started
+05:16:00,854 INFOmainSteps:login:36-Login performed
+05:16:37,817 INFOmainSteps:initBrowser:28-Browser started
+05:16:41,487 INFOmainSteps:login:36-Login performed
+05:46:07,319 INFOmainSteps:initBrowser:30-Browser started
+05:46:10,645 INFOmainSteps:login:38-Login performed
+06:04:38,420 INFOmainSteps:initBrowser:30-Browser started

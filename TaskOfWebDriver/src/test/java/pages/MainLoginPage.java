@@ -33,7 +33,7 @@ public class MainLoginPage extends AbstractClass {
 	@FindBy(xpath = "//div[@class='asl T-I-J3 J-J5-Ji']")
 	private WebElement inputToSpam;
 
-	@FindBy(xpath = "//div[@class='ae4.aDM']")
+	@FindBy(xpath = "//div[@class='ae4 aDM']")
 	private WebElement theFirstLetter;
 
 	@FindBy(xpath = "//div[@class='aos T-I-J3 J-J5-Ji']")
@@ -44,6 +44,12 @@ public class MainLoginPage extends AbstractClass {
 
 	@FindBy(xpath = "//td[@class='xY a4W']")
 	private WebElement openLetter;
+
+	@FindBy(id = "gbqfq")
+	private WebElement inputText;
+
+	@FindBy(xpath = "//span[@class='gbqfi gb_Na']")
+	private WebElement inputSearch;
 
 	public MainLoginPage(WebDriver driver) {
 		super(driver);
@@ -60,6 +66,24 @@ public class MainLoginPage extends AbstractClass {
 		inputPassword.sendKeys(password);
 		buttonSubmit.submit();
 
+	}
+
+	public void goToTrash() {
+		inputText.click();
+		inputText.sendKeys("in:trash");
+		inputSearch.click();
+	}
+
+	public void goToSpam() {
+		inputText.click();
+		inputText.sendKeys("in:spam");
+		inputSearch.click();
+	}
+
+	public void goToInbox() {
+		inputText.click();
+		inputText.sendKeys("in:inbox");
+		inputSearch.click();
 	}
 
 	public void clickNewMessage() {

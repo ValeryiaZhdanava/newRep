@@ -14,21 +14,8 @@ public class SpamPage extends AbstractClass {
 
 	int k = 0;
 
-	@FindBy(id = "gbqfq")
-	private WebElement inputText;
-
-	@FindBy(xpath = "//span[@class='gbqfi gb_Ia']")
-	private WebElement inputSearch;
-
 	@FindBy(xpath = "//div[@class='zA zE']")
 	private List<WebElement> allLetters;
-
-	public void ToSeeSpam() {
-		inputText.click();
-		inputText.sendKeys("in:spam");
-		inputSearch.click();
-
-	}
 
 	public void CheckNumberOfLetters() {
 
@@ -43,9 +30,6 @@ public class SpamPage extends AbstractClass {
 
 		}
 		logger.info("The test is faild");
-		// return false;
-		// logger.info("The test is failed");
-
 	}
 
 	public SpamPage(WebDriver driver) {

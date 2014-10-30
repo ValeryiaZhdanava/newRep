@@ -16,7 +16,7 @@ public class FilterPage extends AbstractClass {
 	@FindBy(xpath = "//input[@class='ZH nr aQa']")
 	private WebElement inputFieldFrom;
 
-	@FindBy(xpath = "//span[@class='w-Pv ZG']/input[1]")
+	@FindBy(xpath = "//label[text()='Has attachment']/../input")//[@type='checkbox']
 	// span[@class='w-Pv ZG'][label[contains(text(),'Has attachment')]
 	private WebElement checkHasAttachment;
 

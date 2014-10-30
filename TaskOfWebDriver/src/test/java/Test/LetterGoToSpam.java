@@ -1,8 +1,15 @@
 package Test;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import Object.Users;
 
 import steps.Steps;
 
@@ -15,23 +22,23 @@ public class LetterGoToSpam {
 		step.initBrowser();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void IsLetteFromTheFirstUserGoToSpam() throws InterruptedException {
 		//
-		// step.login("Valery6693@gmail.com", "11kesha2011");
+		// step.login(Users.USER1);
 		// step.sendMessage();
 		// step.closeDriver();
 		// step.initBrowser();
-		// step.login("Valery66934@gmail.com", "dslr0101");
+		// step.login(Users.USER2);
 		// step.setSpam();
 		// step.closeDriver();
 		// step.initBrowser();
-		// step.login("Valery6693@gmail.com", "11kesha2011");
+		// step.login(Users.USER1);
 		//
 		// step.sendMessage();
 		// step.closeDriver();
 		// step.initBrowser();
-		// step.login("Valery66934@gmail.com", "dslr0101"); //the thrid mail:
+		// step.login(Users.USER2); //the thrid mail:
 		// //WebDriverTestEmail // 111sun111
 		// step.ToSeeSpam();
 		// step.CheckNumberOfLetters();
@@ -41,37 +48,38 @@ public class LetterGoToSpam {
 	@Test
 	public void LetterFromOneUserTrashAndMarkAsImportant() throws Exception {
 
-		// step.login("Valery66934@gmail.com", "dslr0101");
+		// step.login(Users.USER2);
 		// step.inputSetting();
 		// step.ChooseForwardingAndPOP();
 		// step.addForwardAdress();
 		// step.closeDriver();
 		// step.initBrowser();
-		// step.login("webdrivertestemail@gmail.com", "111sun111");
+		// step.login(Users.USER3);
 		// step.openLetter();
 		// step.clickLink();
 		// Thread.sleep(1000);
 		// step.closeDriver();
 		// step.initBrowser();
-		// step.login("Valery66934@gmail.com", "dslr0101");
+		// step.login(Users.USER2);
 		// step.inputSetting();
 		// step.ChooseForwardingAndPOP();
 		// step.forwardACopy();
 		// step.chooseFilters();
 		// step.createANewFilterWithSetting();
 		// step.closeDriver();
-		step.login("Valery6693@gmail.com", "11kesha2011");
-		step.sendMessageWithAttach();
-		step.createNewFile();
+		// step.initBrowser();
+		// step.login(Users.USER1);
+		// step.sendMessageWithAttach();
+		// step.sendMessage();
+		// step.closeDriver();
+		// step.initBrowser();
+		step.login(Users.USER3);
+		Assert.assertTrue(step.checkLetterInTrashAndMarkAsImportant());
 
-		// steps.sendMessage();
-		// steps.closeDriver();
-		// steps.initBrowser();
-		// steps.login("Valery66934@gmail.com", "dslr0101");
-		// steps.ToSeeSpam();
 		// steps.CheckNumberOfLetters();
 
 	}
+	
 
 	@AfterTest
 	public void afterTest() {

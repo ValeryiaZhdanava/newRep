@@ -1,5 +1,6 @@
 package pages;
 
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 public abstract class AbstractClass {
@@ -15,5 +16,10 @@ public abstract class AbstractClass {
 	}
 
 	public abstract void openPage();
+
+	public void waitPage() {
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	}
 
 }

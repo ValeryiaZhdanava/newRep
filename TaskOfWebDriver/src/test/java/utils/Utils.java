@@ -1,9 +1,8 @@
 package utils;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Random;
 
 public class Utils {
@@ -19,26 +18,18 @@ public class Utils {
 	}
 
 	@SuppressWarnings("resource")
-	public static String getFile(int fileSize) {
+	public static String getFile(long fileSize) throws IOException {
 
-		FileWriter fileWriter = null;
-		File file = null;
-		try {
-			file = new File("file.txt");
-			fileWriter = new FileWriter(file);
-			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			while (file.length() < fileSize) {
-				bufferedWriter.write(AB);
-			}
-			System.out.println(file.length());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+		File file = new File("file.txt");
+		RandomAccessFile rf = new RandomAccessFile(file, "rw");
+		rf.setLength(fileSize);
 		return file.getAbsolutePath();
+
 	}
 
-	// public static void getAbsolutePath() {
-	//
-	// }
+	public static void deleteFile(File file) {
+		file.delete();
+
+	}
+
 }
