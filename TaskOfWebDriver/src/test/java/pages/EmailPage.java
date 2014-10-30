@@ -18,6 +18,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Object.Users;
+
 import utils.Utils;
 
 public class EmailPage extends AbstractClass {
@@ -48,7 +50,7 @@ public class EmailPage extends AbstractClass {
 
 	public void newMessage() {
 
-		inputAdress.sendKeys("valery66934@gmail.com");
+		inputAdress.sendKeys(Users.USER2.getLogin());
 		writeSubject.sendKeys(Utils.getRandomString(6));
 		writeBodyMessage.sendKeys("Heelogit!!!!");
 		clickSendMessage.click();
@@ -57,7 +59,7 @@ public class EmailPage extends AbstractClass {
 
 	public void newMessageWithAttach() throws AWTException, IOException {
 
-		inputAdress.sendKeys("valery66934@gmail.com");
+		inputAdress.sendKeys(Users.USER2.getLogin());
 		writeSubject.sendKeys(Utils.getRandomString(6));
 		writeBodyMessage.sendKeys(Utils.getRandomString(12));
 		attachAFile.click();

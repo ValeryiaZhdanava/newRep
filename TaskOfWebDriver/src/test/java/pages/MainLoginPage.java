@@ -72,6 +72,7 @@ public class MainLoginPage extends AbstractClass {
 		inputText.click();
 		inputText.sendKeys("in:trash");
 		inputSearch.click();
+
 	}
 
 	public void goToSpam() {

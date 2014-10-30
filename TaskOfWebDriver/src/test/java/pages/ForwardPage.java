@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Object.Users;
+
 public class ForwardPage extends AbstractClass {
 	private final Logger logger = Logger.getLogger(ForwardPage.class);
 
@@ -36,7 +38,7 @@ public class ForwardPage extends AbstractClass {
 
 	public void addForwardAdress() {
 		addForwardingAdress.click();
-		enterForwardingAddress.sendKeys("webdrivertestemail@gmail.com");
+		enterForwardingAddress.sendKeys(Users.USER3.getLogin());
 		buttonNext.click();
 
 		driver.switchTo().frame(frameConfirmforwardingAddress);

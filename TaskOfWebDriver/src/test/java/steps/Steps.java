@@ -5,8 +5,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Object.Users;
 
@@ -22,6 +25,7 @@ import pages.TrashPage;
 public class Steps {
 	private WebDriver driver;
 	private final Logger logger = Logger.getLogger(Steps.class);
+	//WebDriverWait wait = new WebDriverWait(driver, 150);
 
 	public void initBrowser() {
 		driver = new FirefoxDriver();
@@ -131,6 +135,10 @@ public class Steps {
 		TrashPage tpage = new TrashPage(driver);
 		MainLoginPage mpage = new MainLoginPage(driver);
 		mpage.goToTrash();
+		
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By
+//				.xpath("//div[@class='Cp']")));
+		
 		return (("Important because you marked it as important.")
 				.equalsIgnoreCase(tpage.isImportant()));
 		// (tpage.checkLetter())

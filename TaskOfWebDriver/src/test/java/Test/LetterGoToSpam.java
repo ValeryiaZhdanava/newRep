@@ -1,9 +1,5 @@
 package Test;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -24,7 +20,6 @@ public class LetterGoToSpam {
 
 	@Test(enabled = false)
 	public void IsLetteFromTheFirstUserGoToSpam() throws InterruptedException {
-		//
 		// step.login(Users.USER1);
 		// step.sendMessage();
 		// step.closeDriver();
@@ -68,21 +63,20 @@ public class LetterGoToSpam {
 		// step.createANewFilterWithSetting();
 		// step.closeDriver();
 		// step.initBrowser();
-		// step.login(Users.USER1);
-		// step.sendMessageWithAttach();
-		// step.sendMessage();
-		// step.closeDriver();
-		// step.initBrowser();
+		step.login(Users.USER1);
+		step.sendMessageWithAttach();
+		step.sendMessage();
+		step.closeDriver();
+		step.initBrowser();
 		step.login(Users.USER3);
 		Assert.assertTrue(step.checkLetterInTrashAndMarkAsImportant());
 
 		// steps.CheckNumberOfLetters();
 
 	}
-	
 
-	@AfterTest
-	public void afterTest() {
-		// steps.closeDriver();
-	}
+//	@AfterTest
+//	public void afterTest() {
+//		// steps.closeDriver();
+//	}
 }

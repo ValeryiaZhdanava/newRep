@@ -259,3 +259,5 @@
 05:46:07,319 INFOmainSteps:initBrowser:30-Browser started
 05:46:10,645 INFOmainSteps:login:38-Login performed
 06:04:38,420 INFOmainSteps:initBrowser:30-Browser started
+06:35:59,957 INFOmainSteps:initBrowser:34-Browser started
+06:36:05,228 INFOmainSteps:login:42-Login performed
