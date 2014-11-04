@@ -26,8 +26,8 @@ public class FilterPage extends AbstractClass {
 	@FindBy(xpath = "//div[@class='acM']")
 	private WebElement checkCreate;
 
-	@FindBy(name = "ok")
-	private WebElement buttonOk;
+//	@FindBy(name = "ok")
+//	private WebElement buttonOk;
 
 	@FindBy(xpath = "//label[text()='Delete it']/../input")
 	// div[@class='nH lZ'][1]")
@@ -44,7 +44,7 @@ public class FilterPage extends AbstractClass {
 		inputFieldFrom.sendKeys(Users.USER1.getLogin());
 		checkHasAttachment.click();
 		checkCreate.click();
-		buttonOk.click();
+		//buttonOk.click();
 		checkDeleteIt.click();
 		checkAlwaysMarkAsImportant.click();
 		buttonCreateFilter.click();
@@ -57,6 +57,5 @@ public class FilterPage extends AbstractClass {
 
 	@Override
 	public void openPage() {
-
 	}
 }

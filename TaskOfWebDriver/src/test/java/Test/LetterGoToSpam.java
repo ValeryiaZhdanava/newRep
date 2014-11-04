@@ -68,15 +68,16 @@ public class LetterGoToSpam {
 		step.sendMessage();
 		step.closeDriver();
 		step.initBrowser();
-		step.login(Users.USER3);
-		Assert.assertTrue(step.checkLetterInTrashAndMarkAsImportant());
+		step.login(Users.USER2);
+		// Assert.assertTrue(step.checkLetterInTrashAndMarkAsImportant());
+		Assert.assertTrue(step.checkLetterInInboxAndWithoutMarkAsImportant());
 
 		// steps.CheckNumberOfLetters();
 
 	}
 
-//	@AfterTest
-//	public void afterTest() {
-//		// steps.closeDriver();
-//	}
+	// @AfterTest
+	// public void afterTest() {
+	// // steps.closeDriver();
+	// }
 }

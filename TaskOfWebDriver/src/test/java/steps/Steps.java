@@ -25,7 +25,6 @@ import pages.TrashPage;
 public class Steps {
 	private WebDriver driver;
 	private final Logger logger = Logger.getLogger(Steps.class);
-	//WebDriverWait wait = new WebDriverWait(driver, 150);
 
 	public void initBrowser() {
 		driver = new FirefoxDriver();
@@ -47,6 +46,7 @@ public class Steps {
 		MainLoginPage page = new MainLoginPage(driver);
 		EmailPage epage = new EmailPage(driver);
 		page.waitPage();
+
 		page.clickNewMessage();
 		epage.newMessage();
 		logger.info("Message is sent");
@@ -55,18 +55,13 @@ public class Steps {
 	public void sendMessageWithAttach() throws InterruptedException,
 			IOException, AWTException {
 		MainLoginPage page = new MainLoginPage(driver);
-		page.waitPage();
+		// page.waitPage();
 		EmailPage epage = new EmailPage(driver);
 		page.clickNewMessage();
 		epage.newMessageWithAttach();
 
 		logger.info("Message with attach is sent");
 	}
-
-	// public void createNewFile() throws Exception {
-	// EmailPage epage = new EmailPage(driver);
-	// epage.attacheFile();
-	// }
 
 	public void setSpam() {
 		MainLoginPage page = new MainLoginPage(driver);
@@ -110,13 +105,13 @@ public class Steps {
 
 	public void openLetter() {
 		MainLoginPage page = new MainLoginPage(driver);
-		page.waitPage();
+		// page.waitPage();
 		page.openLetter();
 	}
 
 	public void clickLink() {
 		Letter letter = new Letter(driver);
-		letter.waitPage();
+		// letter.waitPage();
 		letter.clickLink();
 	}
 
@@ -134,23 +129,27 @@ public class Steps {
 	public boolean checkLetterInTrashAndMarkAsImportant() {
 		TrashPage tpage = new TrashPage(driver);
 		MainLoginPage mpage = new MainLoginPage(driver);
+		EmailPage epage = new EmailPage(driver);
+		// WebDriverWait wait = new WebDriverWait(driver, 150);
 		mpage.goToTrash();
-		
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By
-//				.xpath("//div[@class='Cp']")));
-		
-		return (("Important because you marked it as important.")
-				.equalsIgnoreCase(tpage.isImportant()));
-		// (tpage.checkLetter())
-		// ("Attachment").equalsIgnoreCase(tpage.isAttachment())
+
+		return (("Important because it matched one of your importance filters.")
+				.equalsIgnoreCase(tpage.isImportant()) & tpage.checkLetter() & ("Attachment")
+					.equalsIgnoreCase(tpage.isAttachment()));
+																// ("Valery66934@gmail.com").equalsIgnoreCase(epage.getEmailUser())
+
 	}
-	// public boolean checkLetterInInboxAndWithoutMarkAsImportant() {
-	// TrashPage tpage = new TrashPage(driver);
-	// MainLoginPage mpage = new MainLoginPage(driver);
-	// mpage.goToInbox();
-	// return (tpage.checkLetter()
-	// & ("Not important").equalsIgnoreCase(anotherString)
-	// );
+
+	public boolean checkLetterInInboxAndWithoutMarkAsImportant() {
+		TrashPage tpage = new TrashPage(driver);
+		MainLoginPage mpage = new MainLoginPage(driver);
+		EmailPage epage = new EmailPage(driver);
+		// WebDriverWait wait = new WebDriverWait(driver, 150);
+		mpage.goToInbox();
+		return (("Not important").equalsIgnoreCase(tpage.isNotImportant())
+				& tpage.checkLetter() & !("Attachment").equalsIgnoreCase(tpage
+				.isAttachment()));
+	}
 }
 // public void fillFieldOfFilter(){
 //

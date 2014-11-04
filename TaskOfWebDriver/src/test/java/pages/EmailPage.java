@@ -48,6 +48,9 @@ public class EmailPage extends AbstractClass {
 	@FindBy(xpath = "//span[@class='ag ca']")
 	private WebElement labelMessageSend;
 
+	@FindBy(xpath = "//span[@class='zF']")
+	private WebElement letter;
+
 	public void newMessage() {
 
 		inputAdress.sendKeys(Users.USER2.getLogin());
@@ -57,24 +60,27 @@ public class EmailPage extends AbstractClass {
 
 	}
 
+	public String getEmailUser() {
+		return letter.getAttribute("email");
+	}
+
 	public void newMessageWithAttach() throws AWTException, IOException {
 
+		File file = new File(Utils.getFile(20000));
 		inputAdress.sendKeys(Users.USER2.getLogin());
 		writeSubject.sendKeys(Utils.getRandomString(6));
 		writeBodyMessage.sendKeys(Utils.getRandomString(12));
 		attachAFile.click();
-		File file = new File(Utils.getFile(20000));
+
 		StringSelection ss = new StringSelection(file.getAbsolutePath());
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		Robot robot;
-
-		robot = new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
-		robot.delay(2000);
+		robot.delay(1000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 
@@ -82,8 +88,9 @@ public class EmailPage extends AbstractClass {
 				.xpath("//div[@class='dQ']")));
 
 		clickSendMessage.click();
+
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By
-				.xpath("//span[@class='ag ca']")));
+				.xpath("//div[@class='vh']")));
 
 		logger.info("Login performed");
 	}

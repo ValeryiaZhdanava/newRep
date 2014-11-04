@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import Object.Users;
 
 public class ForwardPage extends AbstractClass {
-	private final Logger logger = Logger.getLogger(ForwardPage.class);
+	//private final Logger logger = Logger.getLogger(ForwardPage.class);
 
 	@FindBy(xpath = "//input[@value='Add a forwarding address']")
 	private WebElement addForwardingAdress;

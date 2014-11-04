@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TrashPage extends AbstractClass {
 	private final Logger logger = Logger.getLogger(TrashPage.class);
-	WebDriverWait wait = new WebDriverWait(driver, 150);
+	WebDriverWait wait = new WebDriverWait(driver, 30);
 
 	@FindBy(xpath = "//img[@class='yE']")
 	private WebElement attachment;
@@ -19,8 +19,13 @@ public class TrashPage extends AbstractClass {
 	@FindBy(xpath = "//div[@class='ae4 UI UJ']//tr[@class='zA zE']")
 	private List<WebElement> unreadLetters;
 
-	@FindBy(xpath = "//div[@class='T-ays-a45']") //td[@class='WA xY']/div[@class='pG']"
+	@FindBy(xpath = "//div[@aria-label='Important because it matched one of your importance filters.']")
+	// td[@class='WA xY']/div[@class='pG']"
 	private WebElement isMarkImportant;
+
+	@FindBy(xpath = "//div[@aria-label='Not important']")
+	// td[@class='WA xY']/div[@class='pG']"
+	private WebElement isMarkNotImportant;
 
 	public String isAttachment() {
 		return attachment.getAttribute("alt");
@@ -32,6 +37,10 @@ public class TrashPage extends AbstractClass {
 
 	public boolean checkLetter() {
 		return unreadLetters.size() > 0;
+	}
+
+	public String isNotImportant() {
+		return isMarkNotImportant.getAttribute("aria-label");
 	}
 
 	public TrashPage(WebDriver driver) {

@@ -58,14 +58,12 @@ public class MainLoginPage extends AbstractClass {
 
 	public void openPage() {
 		driver.navigate().to(BASE_URL);
-
 	}
 
 	public void login(String login, String password) {
 		inputLogin.sendKeys(login);
 		inputPassword.sendKeys(password);
 		buttonSubmit.submit();
-
 	}
 
 	public void goToTrash() {
@@ -73,6 +71,8 @@ public class MainLoginPage extends AbstractClass {
 		inputText.sendKeys("in:trash");
 		inputSearch.click();
 
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By
+				.xpath("//div[@class='yW']")));
 	}
 
 	public void goToSpam() {
@@ -90,7 +90,6 @@ public class MainLoginPage extends AbstractClass {
 	public void clickNewMessage() {
 
 		clickWriteMessage.click();
-
 	}
 
 	public void setSpam() {
@@ -99,7 +98,6 @@ public class MainLoginPage extends AbstractClass {
 				.xpath("//div[@class='Cp']")));
 		chooseLetter.click();
 		inputToSpam.click();
-
 	}
 
 	public void inputSetting() {
