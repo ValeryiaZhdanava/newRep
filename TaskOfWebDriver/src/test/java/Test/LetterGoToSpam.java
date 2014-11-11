@@ -1,13 +1,11 @@
 package Test;
 
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import Object.Users;
+import org.testng.AssertJUnit;
+import org.testng.annotations.BeforeTest;
 
 import steps.Steps;
+import Object.Users;
 
 public class LetterGoToSpam {
 	private Steps step;
@@ -70,7 +68,8 @@ public class LetterGoToSpam {
 		step.initBrowser();
 		step.login(Users.USER2);
 		// Assert.assertTrue(step.checkLetterInTrashAndMarkAsImportant());
-		Assert.assertTrue(step.checkLetterInInboxAndWithoutMarkAsImportant());
+		AssertJUnit.assertTrue(step
+				.checkLetterInInboxAndWithoutMarkAsImportant());
 
 		// steps.CheckNumberOfLetters();
 
