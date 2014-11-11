@@ -54,15 +54,15 @@ public class LogicClass {
 
 	public static int capacity(Airport air) {
 		int capacity = 0;
-		List<Plane> freighter = air.getPlane();
-		for (int i = 0; i < freighter.size(); i++)
-
-		{
-			if (freighter.get(i) instanceof Freighter) {
-				Freighter fr = (Freighter) freighter.get(i);
-				capacity += fr.getCapacity();
-			}
-		}
+		// List<Plane> freighter = air.getPlane();
+		// for (int i = 0; i < freighter.size(); i++)
+		//
+		// {
+		// if (freighter.get(i) instanceof Freighter) {
+		// Freighter fr = (Freighter) freighter.get(i);
+		// capacity += fr.getCapacity();
+		// }
+		// }
 
 		return capacity;
 	}
